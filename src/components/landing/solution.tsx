@@ -11,64 +11,64 @@ const solutionFeatures = [
 
 export function Solution() {
   return (
-    <section className="bg-slate-950 py-20">
+    <section className="bg-background py-20">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
-        <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           What If You Had a Scanner{" "}
-          <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+          <span className="text-primary">
             That Never Sleeps?
           </span>
         </h2>
 
         <div className="mb-10 space-y-3">
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="mb-2 text-base font-medium text-white">Imagine this:</p>
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">3:00 AM</span> — You're asleep.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="mb-2 text-base font-medium text-foreground">Imagine this:</p>
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">3:00 AM</span> — You're asleep.
             </p>
           </div>
 
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">3:02 AM</span> — Your scanner finds a Mulberry bag on Vinted for £45.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">3:02 AM</span> — Your scanner finds a Mulberry bag on Vinted for £45.
             </p>
           </div>
 
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">3:03 AM</span> — Gemini AI confirms it's authentic, good condition.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">3:03 AM</span> — Gemini AI confirms it's authentic, good condition.
             </p>
           </div>
 
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">3:04 AM</span> — Scanner calculates £68 profit after fees.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">3:04 AM</span> — Scanner calculates £68 profit after fees.
             </p>
           </div>
 
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">3:05 AM</span> — Alert hits your phone.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">3:05 AM</span> — Alert hits your phone.
             </p>
           </div>
 
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">7:00 AM</span> — You wake up, buy it in 60 seconds.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">7:00 AM</span> — You wake up, buy it in 60 seconds.
             </p>
           </div>
 
-          <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-5">
-            <p className="text-slate-300">
-              <span className="font-mono text-blue-400">7:30 AM</span> — List it on eBay at £135.
+          <div className="rounded-lg border border-foreground/10 bg-muted/30 p-5 shadow-editorial">
+            <p className="text-muted-foreground">
+              <span className="font-mono text-primary">7:30 AM</span> — List it on eBay at £135.
             </p>
           </div>
 
-          <div className="rounded-lg border-2 border-green-500/50 bg-green-500/10 p-6">
-            <p className="text-xl font-semibold text-green-400">
+          <div className="rounded-lg border-2 border-primary/40 bg-primary/5 p-6 shadow-editorial-lg">
+            <p className="text-xl font-semibold text-primary">
               That's £68 profit for 2 minutes of work.
             </p>
-            <p className="mt-2 text-base text-slate-300">While you were sleeping.</p>
+            <p className="mt-2 text-base text-muted-foreground">While you were sleeping.</p>
           </div>
         </div>
 
@@ -76,10 +76,10 @@ export function Solution() {
           {solutionFeatures.map((feature, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 rounded-lg border border-green-500/20 bg-green-500/5 p-4"
+              className="flex items-start gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4 shadow-editorial"
             >
-              <Check className="mt-1 h-4 w-4 flex-shrink-0 text-green-400" />
-              <p className="text-slate-300">{feature}</p>
+              <Check className="mt-1 h-4 w-4 flex-shrink-0 text-primary" />
+              <p className="text-muted-foreground">{feature}</p>
             </div>
           ))}
         </div>

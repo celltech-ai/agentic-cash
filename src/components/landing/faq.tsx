@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "What's the difference between the three volumes?",
-    answer: "Volume 1 is strategy (no code): marketplaces, categories, profit math, sourcing, selling. Volume 2 is technical: complete scanner codebase, AI vision, deployment. Volume 3 is advanced: cross-platform matching, trend detection, cook group intel, monetization. The Complete System ($47) includes all three plus bonuses.",
+    answer: "Volume 1 is strategy (no code): marketplaces, categories, profit math, sourcing, selling. Volume 2 is technical: complete scanner codebase, AI vision, deployment. Volume 3 is advanced: cross-platform matching, trend detection, cook group intel, monetization. The Complete System ($97) includes all three plus bonuses.",
   },
   {
     question: "Do I need a VPS to run the scanner?",

@@ -29,7 +29,7 @@ const plans = [
   {
     name: "Complete System",
     subtitle: "Everything You Need",
-    price: 47,
+    price: 97,
     originalPrice: 297,
     description: "The full stack: strategy, code, advanced tactics, and monetization blueprints.",
     features: [
@@ -53,7 +53,7 @@ const plans = [
     name: "Volume 2",
     subtitle: "Technical Implementation",
     price: 27,
-    originalPrice: 47,
+    originalPrice: 97,
     description: "For technical users who want to build their own automated scanner.",
     features: [
       "21,029 words of technical content",

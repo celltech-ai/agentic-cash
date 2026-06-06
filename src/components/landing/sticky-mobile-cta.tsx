@@ -10,7 +10,7 @@ export function StickyMobileCTA() {
         size="lg"
         className="w-full bg-blue-600 py-6 text-lg hover:bg-blue-700"
       >
-        Get Instant Access — $47
+        Get Instant Access — $97
         <ArrowRight className="ml-2 h-5 w-5" />
       </Button>
       <p className="mt-2 text-center text-xs text-slate-400">

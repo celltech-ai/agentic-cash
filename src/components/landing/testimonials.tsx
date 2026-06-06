@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: "Lisa W.",
     role: "Freelancer",
-    content: "Started with manual flipping from Volume 1, then built the scanner from Volume 2. Now I'm selling subscription alerts to other resellers. £47 investment turned into recurring revenue.",
+    content: "Started with manual flipping from Volume 1, then built the scanner from Volume 2. Now I'm selling subscription alerts to other resellers. £97 investment turned into recurring revenue.",
     rating: 5,
     profit: "£2,500/month",
   },

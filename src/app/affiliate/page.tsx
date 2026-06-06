@@ -16,14 +16,14 @@ export default function AffiliatePage() {
         
         <h2 className="mb-4 mt-8 text-2xl font-semibold">Program Details</h2>
         <p className="mb-4 text-slate-300">
-          Earn 30% commission on every sale you refer. With our Complete System priced at $47, that's $14.10 per sale. Our conversion rate is strong, making this a profitable opportunity for affiliates.
+          Earn 30% commission on every sale you refer. With our Complete System priced at $97, that's $29.10 per sale. Our conversion rate is strong, making this a profitable opportunity for affiliates.
         </p>
 
         <h2 className="mb-4 mt-8 text-2xl font-semibold">Commission Structure</h2>
         <ul className="mb-4 list-disc pl-6 text-slate-300">
           <li>Volume 1 ($17): $5.10 commission per sale</li>
           <li>Volume 2 ($27): $8.10 commission per sale</li>
-          <li>Complete System ($47): $14.10 commission per sale</li>
+          <li>Complete System ($97): $29.10 commission per sale</li>
         </ul>
 
         <h2 className="mb-4 mt-8 text-2xl font-semibold">How It Works</h2>

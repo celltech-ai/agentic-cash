@@ -24,7 +24,7 @@ export function CTA() {
             size="lg"
             className="bg-white px-10 py-6 text-lg font-medium text-blue-600 hover:bg-white/90"
           >
-            Get Instant Access — $47
+            Get Instant Access — $97
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <p className="mt-4 text-sm text-white/80">
@@ -50,7 +50,7 @@ export function CTA() {
         <div className="mt-10 rounded-lg bg-white/10 p-5 backdrop-blur">
           <p className="text-base text-white">
             <strong>Launch pricing ends soon.</strong> After 100 customers, the price increases to $97. 
-            Lock in the $47 price now and get all future updates free.
+            Lock in the $97 price now and get all future updates free.
           </p>
         </div>
       </div>
