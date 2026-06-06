@@ -49,44 +49,39 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="bg-gradient-to-b from-slate-950 to-slate-900 py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-white">
-            Real Results from
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <section className="bg-gradient-to-b from-slate-950 to-slate-900 py-20">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Real Results from{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Real Resellers
             </span>
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto max-w-2xl text-base text-slate-400">
             Join hundreds of resellers who've transformed their arbitrage business with automated deal detection.
           </p>
         </div>
 
-        {/* Testimonials grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-slate-800 bg-slate-900/50 backdrop-blur">
-              <CardContent className="pt-6">
-                {/* Stars */}
-                <div className="mb-4 flex gap-1">
+            <Card key={index} className="border-slate-800 bg-slate-900/50">
+              <CardContent className="pt-5">
+                <div className="mb-3 flex gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
 
-                {/* Content */}
-                <p className="mb-4 text-slate-300">&quot;{testimonial.content}&quot;</p>
+                <p className="mb-4 text-sm text-slate-300">&quot;{testimonial.content}&quot;</p>
 
-                {/* Author */}
                 <div className="flex items-center justify-between border-t border-slate-800 pt-4">
                   <div>
-                    <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-sm text-slate-400">{testimonial.role}</div>
+                    <div className="text-sm font-medium text-white">{testimonial.name}</div>
+                    <div className="text-xs text-slate-400">{testimonial.role}</div>
                   </div>
                   <div className="text-right">
-                    <div className="text-lg font-bold text-green-400">{testimonial.profit}</div>
+                    <div className="text-base font-medium text-green-400">{testimonial.profit}</div>
                   </div>
                 </div>
               </CardContent>
@@ -94,28 +89,27 @@ export function Testimonials() {
           ))}
         </div>
 
-        {/* Bottom stats */}
-        <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">
+            <div className="text-3xl font-medium text-white">
               <AnimatedCounter end={500} suffix="+" />
             </div>
             <div className="text-sm text-slate-400">Active Users</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">
+            <div className="text-3xl font-medium text-white">
               £<AnimatedCounter end={2.1} suffix="M+" decimals={1} />
             </div>
             <div className="text-sm text-slate-400">Total Profit Generated</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">
+            <div className="text-3xl font-medium text-white">
               <AnimatedCounter end={4.9} suffix="/5" decimals={1} />
             </div>
             <div className="text-sm text-slate-400">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">
+            <div className="text-3xl font-medium text-white">
               <AnimatedCounter end={98} suffix="%" />
             </div>
             <div className="text-sm text-slate-400">Success Rate</div>

@@ -53,17 +53,16 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="bg-slate-950 py-24">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-white">
-            Frequently Asked
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <section className="bg-slate-950 py-20">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="mb-10 text-center">
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Frequently Asked{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Questions
             </span>
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto max-w-2xl text-base text-slate-400">
             Everything you need to know about Agentic Cash Pipelines. Can't find what you're looking for?{" "}
             <a href="mailto:support@agenticsystems.cash" className="text-blue-400 hover:text-blue-300">
               Contact us
@@ -72,26 +71,24 @@ export function FAQ() {
           </p>
         </div>
 
-        {/* FAQ accordion */}
         <Accordion className="w-full">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="border-slate-800">
-              <AccordionTrigger className="text-left text-lg text-white hover:text-blue-400">
+              <AccordionTrigger className="text-left text-base font-medium text-white hover:text-blue-400">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-slate-400">
+              <AccordionContent className="text-sm text-slate-400">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <p className="mb-4 text-slate-400">Still have questions?</p>
+        <div className="mt-10 text-center">
+          <p className="mb-3 text-sm text-slate-400">Still have questions?</p>
           <a
             href="mailto:support@agenticsystems.cash"
-            className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300"
+            className="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300"
           >
             Email us at support@agenticsystems.cash
           </a>

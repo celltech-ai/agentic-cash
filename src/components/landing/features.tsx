@@ -54,44 +54,41 @@ const features = [
 
 export function Features() {
   return (
-    <section className="bg-slate-950 py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-white">
-            Everything You Need to Build a
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <section className="bg-slate-950 py-20">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Everything You Need to Build a{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               £5,000/Month Operation
             </span>
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto max-w-2xl text-base text-slate-400">
             Three comprehensive volumes, working code, and proven strategies to transform marketplace arbitrage into a systematic business.
           </p>
         </div>
 
-        {/* Features grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} className="border-slate-800 bg-slate-900/50 backdrop-blur">
+              <Card key={index} className="border-slate-800 bg-slate-900/50">
                 <CardHeader>
-                  <div className={`mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-800 ${feature.color}`}>
-                    <Icon className="h-6 w-6" />
+                  <div className={`mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 ${feature.color}`}>
+                    <Icon className="h-5 w-5" />
                   </div>
-                  <CardTitle className="text-xl text-white">{feature.title}</CardTitle>
+                  <CardTitle className="text-lg font-medium text-white">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-400">{feature.description}</p>
+                  <p className="text-sm text-slate-400">{feature.description}</p>
                 </CardContent>
               </Card>
             );
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-slate-400">
+        <div className="mt-12 text-center">
+          <p className="text-sm text-slate-400">
             Plus: Fee calculator templates, VPS deployment scripts, and lifetime updates.
           </p>
         </div>

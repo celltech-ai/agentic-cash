@@ -19,7 +19,7 @@ export function Hero() {
           </Badge>
 
           {/* Main headline */}
-          <h1 className="mb-6 text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Build an AI Scanner That Finds
             <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               £50-£200 Profit Deals
@@ -28,18 +28,18 @@ export function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="mx-auto mb-8 max-w-3xl text-xl text-slate-300 sm:text-2xl">
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-300 sm:text-xl">
             The complete system for finding underpriced items on Vinted, eBay, 
             and 10+ marketplaces — using AI vision to spot deals humans miss.
           </p>
 
           {/* CTA Buttons */}
           <div className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="bg-blue-600 px-8 py-6 text-lg hover:bg-blue-700">
+            <Button size="lg" className="bg-blue-600 px-6 py-5 text-base hover:bg-blue-700">
               Get Instant Access — $47
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-6 text-lg">
+            <Button variant="outline" size="lg" className="px-6 py-5 text-base">
               Watch Demo
             </Button>
           </div>

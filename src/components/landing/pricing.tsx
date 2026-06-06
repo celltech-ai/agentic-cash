@@ -73,34 +73,31 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section className="bg-slate-900 py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-white">
-            Simple, Transparent
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <section className="bg-slate-900 py-20">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Simple, Transparent{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Pricing
             </span>
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto max-w-2xl text-base text-slate-400">
             Choose the package that fits your needs. All packages include instant access and lifetime updates.
           </p>
         </div>
 
-        {/* Pricing cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative border-slate-800 bg-slate-950/50 backdrop-blur ${
+              className={`relative border-slate-800 bg-slate-950/50 ${
                 plan.popular ? "border-blue-500 shadow-lg shadow-blue-500/20" : ""
               }`}
             >
-              {/* Popular badge */}
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <Badge className="bg-blue-600 px-4 py-1 text-sm">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <Badge className="bg-blue-600 px-3 py-1 text-xs">
                     <Star className="mr-1 h-3 w-3" />
                     {plan.badge}
                   </Badge>
@@ -108,29 +105,27 @@ export function Pricing() {
               )}
 
               <CardHeader>
-                <CardTitle className="text-2xl text-white">{plan.name}</CardTitle>
+                <CardTitle className="text-xl font-medium text-white">{plan.name}</CardTitle>
                 <p className="text-sm text-slate-400">{plan.subtitle}</p>
-                <div className="mt-4">
+                <div className="mt-3">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-5xl font-bold text-white">${plan.price}</span>
-                    <span className="text-lg text-slate-500 line-through">${plan.originalPrice}</span>
+                    <span className="text-4xl font-medium text-white">${plan.price}</span>
+                    <span className="text-base text-slate-500 line-through">${plan.originalPrice}</span>
                   </div>
                   <p className="mt-2 text-sm text-slate-400">{plan.description}</p>
                 </div>
               </CardHeader>
 
               <CardContent>
-                {/* Features list */}
-                <ul className="mb-8 space-y-3">
+                <ul className="mb-6 space-y-2">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <Check className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-400" />
-                      <span className="text-sm text-slate-300">{feature}</span>
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-400" />
+                      <span className="text-slate-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                {/* CTA button */}
                 <Button
                   className={`w-full ${
                     plan.popular
@@ -143,9 +138,8 @@ export function Pricing() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
 
-                {/* Savings badge */}
-                <div className="mt-4 text-center">
-                  <Badge variant="outline" className="border-green-500/50 bg-green-500/10 text-green-400">
+                <div className="mt-3 text-center">
+                  <Badge variant="outline" className="border-green-500/50 bg-green-500/10 text-xs text-green-400">
                     Save {Math.round(((plan.originalPrice - plan.price) / plan.originalPrice) * 100)}%
                   </Badge>
                 </div>
@@ -154,9 +148,8 @@ export function Pricing() {
           ))}
         </div>
 
-        {/* Bottom trust indicators */}
-        <div className="mt-16 text-center">
-          <div className="mb-4 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
+        <div className="mt-10 text-center">
+          <div className="mb-3 flex flex-wrap items-center justify-center gap-5 text-sm text-slate-400">
             <div className="flex items-center gap-2">
               <Check className="h-4 w-4 text-green-400" />
               <span>30-day money-back guarantee</span>
@@ -175,13 +168,11 @@ export function Pricing() {
           </p>
         </div>
 
-        {/* Guarantee Badge */}
-        <div className="mt-12">
+        <div className="mt-10">
           <GuaranteeBadge />
         </div>
 
-        {/* Payment Methods */}
-        <div className="mt-8">
+        <div className="mt-6">
           <PaymentMethods />
         </div>
       </div>

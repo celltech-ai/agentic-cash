@@ -65,61 +65,55 @@ const volumes = [
 
 export function WhatsInside() {
   return (
-    <section className="bg-slate-900 py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="mb-16 text-center">
-          <Badge variant="outline" className="mb-4 border-blue-500/50 bg-blue-500/10 text-blue-400">
-            <FileCode2 className="mr-2 h-3 w-3" />
-            What's Inside
-          </Badge>
-          <h2 className="mb-4 text-4xl font-bold text-white sm:text-5xl">
-            Three Volumes.
-            <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
+    <section className="bg-slate-900 py-20">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Three Volumes.{" "}
+            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
               One Complete System.
             </span>
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto max-w-2xl text-base text-slate-400">
             Everything you need to transform marketplace arbitrage from a manual side hustle 
             into an automated, scalable business.
           </p>
         </div>
 
-        {/* Volumes */}
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-3">
           {volumes.map((volume, index) => {
             const Icon = volume.icon;
             return (
               <Card
                 key={index}
-                className={`border-slate-800 bg-slate-950/50 backdrop-blur ${volume.borderColor}`}
+                className={`border-slate-800 bg-slate-950/50 ${volume.borderColor}`}
               >
                 <CardHeader>
-                  <div className="mb-4 flex items-center gap-3">
+                  <div className="mb-3 flex items-center gap-3">
                     <div
-                      className={`inline-flex h-12 w-12 items-center justify-center rounded-lg ${volume.bgColor} ${volume.color}`}
+                      className={`inline-flex h-10 w-10 items-center justify-center rounded-lg ${volume.bgColor} ${volume.color}`}
                     >
-                      <Icon className="h-6 w-6" />
+                      <Icon className="h-5 w-5" />
                     </div>
                     <div>
-                      <div className="text-sm text-slate-500">Volume {volume.number}</div>
-                      <CardTitle className="text-xl text-white">{volume.title}</CardTitle>
+                      <div className="text-xs text-slate-500">Volume {volume.number}</div>
+                      <CardTitle className="text-lg font-medium text-white">{volume.title}</CardTitle>
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <Badge variant="outline" className="border-slate-700 text-slate-400">
+                    <Badge variant="outline" className="border-slate-700 text-xs text-slate-400">
                       {volume.words}
                     </Badge>
-                    <Badge variant="outline" className="border-slate-700 text-slate-400">
+                    <Badge variant="outline" className="border-slate-700 text-xs text-slate-400">
                       {volume.chapters}
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2">
                     {volume.items.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
-                        <div className={`mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full ${volume.color.replace('text', 'bg')}`} />
+                        <div className={`mt-1.5 h-1 w-1 flex-shrink-0 rounded-full ${volume.color.replace('text', 'bg')}`} />
                         <span className="text-slate-300">{item}</span>
                       </li>
                     ))}
@@ -130,26 +124,25 @@ export function WhatsInside() {
           })}
         </div>
 
-        {/* Bonus section */}
-        <div className="mt-12 rounded-lg border border-slate-800 bg-slate-950/50 p-8 backdrop-blur">
-          <h3 className="mb-6 text-center text-2xl font-bold text-white">
+        <div className="mt-10 rounded-lg border border-slate-800 bg-slate-950/50 p-6">
+          <h3 className="mb-5 text-center text-xl font-medium text-white">
             Plus: Bonus Materials
           </h3>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-4">
-              <div className="mb-2 text-2xl font-bold text-white">5,529</div>
+              <div className="mb-1 text-xl font-medium text-white">5,529</div>
               <div className="text-sm text-slate-400">Lines of working code</div>
             </div>
             <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-4">
-              <div className="mb-2 text-2xl font-bold text-white">13/13</div>
+              <div className="mb-1 text-xl font-medium text-white">13/13</div>
               <div className="text-sm text-slate-400">Tests passing</div>
             </div>
             <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-4">
-              <div className="mb-2 text-2xl font-bold text-white">VPS</div>
+              <div className="mb-1 text-xl font-medium text-white">VPS</div>
               <div className="text-sm text-slate-400">Deployment script included</div>
             </div>
             <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-4">
-              <div className="mb-2 text-2xl font-bold text-white">Lifetime</div>
+              <div className="mb-1 text-xl font-medium text-white">Lifetime</div>
               <div className="text-sm text-slate-400">Updates included</div>
             </div>
           </div>
