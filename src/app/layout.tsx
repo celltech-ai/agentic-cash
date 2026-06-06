@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     title: "Agentic Cash Pipelines — AI-Powered Marketplace Arbitrage",
     description: "Build an AI scanner that finds £50-£200 profit deals on Vinted, eBay, and 10+ marketplaces while you sleep.",
     siteName: "Agentic Cash Pipelines",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Agentic Cash Pipelines" }],
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: "Agentic Cash Pipelines" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Agentic Cash Pipelines — AI-Powered Marketplace Arbitrage",
     description: "Build an AI scanner that finds £50-£200 profit deals on Vinted, eBay, and 10+ marketplaces while you sleep.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
     creator: "@agenticsystems",
   },
   robots: {
@@ -70,6 +70,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className="min-h-full flex flex-col">
         <SkipToContent />
