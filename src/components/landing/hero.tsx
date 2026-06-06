@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Zap, Shield, Clock } from "lucide-react";
+import { AnimatedCounter } from "@/components/ui/animated-counter";
 
 export function Hero() {
   return (
@@ -62,19 +63,27 @@ export function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div>
-              <div className="text-3xl font-bold text-white">54K+</div>
+              <div className="text-3xl font-bold text-white">
+                <AnimatedCounter end={54} suffix="K+" />
+              </div>
               <div className="text-sm text-slate-400">Words of Content</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">5.5K+</div>
+              <div className="text-3xl font-bold text-white">
+                <AnimatedCounter end={5.5} suffix="K+" decimals={1} />
+              </div>
               <div className="text-sm text-slate-400">Lines of Code</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">13/13</div>
+              <div className="text-3xl font-bold text-white">
+                <AnimatedCounter end={13} suffix="/13" />
+              </div>
               <div className="text-sm text-slate-400">Tests Passing</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">15+</div>
+              <div className="text-3xl font-bold text-white">
+                <AnimatedCounter end={15} suffix="+" />
+              </div>
               <div className="text-sm text-slate-400">Marketplaces</div>
             </div>
           </div>

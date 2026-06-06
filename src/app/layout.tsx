@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/landing/header";
 import { StickyMobileCTA } from "@/components/landing/sticky-mobile-cta";
+import { StructuredData } from "@/components/seo/structured-data";
+import { SkipToContent } from "@/components/ui/skip-to-content";
+import { CookieConsent } from "@/components/ui/cookie-consent";
+import { BackToTop } from "@/components/ui/back-to-top";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -56,11 +60,21 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-full flex flex-col">
+        <SkipToContent />
+        <StructuredData />
         <Header />
-        {children}
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
         <StickyMobileCTA />
+        <BackToTop />
+        <CookieConsent />
       </body>
     </html>
   );

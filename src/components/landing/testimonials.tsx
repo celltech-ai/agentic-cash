@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { AnimatedCounter } from "@/components/ui/animated-counter";
 
 const testimonials = [
   {
@@ -96,19 +97,27 @@ export function Testimonials() {
         {/* Bottom stats */}
         <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">500+</div>
+            <div className="text-4xl font-bold text-white">
+              <AnimatedCounter end={500} suffix="+" />
+            </div>
             <div className="text-sm text-slate-400">Active Users</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">£2.1M+</div>
+            <div className="text-4xl font-bold text-white">
+              £<AnimatedCounter end={2.1} suffix="M+" decimals={1} />
+            </div>
             <div className="text-sm text-slate-400">Total Profit Generated</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">4.9/5</div>
+            <div className="text-4xl font-bold text-white">
+              <AnimatedCounter end={4.9} suffix="/5" decimals={1} />
+            </div>
             <div className="text-sm text-slate-400">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white">98%</div>
+            <div className="text-4xl font-bold text-white">
+              <AnimatedCounter end={98} suffix="%" />
+            </div>
             <div className="text-sm text-slate-400">Success Rate</div>
           </div>
         </div>

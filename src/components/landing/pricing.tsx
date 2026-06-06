@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight, Star } from "lucide-react";
+import { GuaranteeBadge } from "@/components/ui/guarantee-badge";
+import { PaymentMethods } from "@/components/ui/payment-methods";
 
 const plans = [
   {
@@ -171,6 +173,16 @@ export function Pricing() {
           <p className="text-sm text-slate-500">
             All prices in USD. VAT handled automatically for EU customers.
           </p>
+        </div>
+
+        {/* Guarantee Badge */}
+        <div className="mt-12">
+          <GuaranteeBadge />
+        </div>
+
+        {/* Payment Methods */}
+        <div className="mt-8">
+          <PaymentMethods />
         </div>
       </div>
     </section>
