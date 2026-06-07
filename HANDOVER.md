@@ -6,7 +6,7 @@ Complete, production-ready Next.js landing page for **Agentic Systems Cash** - a
 
 **Status:** ✅ Production Ready  
 **Domain:** agenticsystems.cash  
-**New Repo Name:** `agentic-cash`
+**Repository:** https://github.com/celltech-ai/agentic-cash
 
 ---
 
@@ -212,52 +212,20 @@ No environment variables required for the landing page. All content is static.
 
 ## Creating the New Repository
 
-### Step 1: Create New Repository
+### Step 1: Clone Repository
 ```bash
-# Navigate to project directory
-cd D:/agentic-systems-cash
+# Clone the repository
+git clone https://github.com/celltech-ai/agentic-cash.git
+cd agentic-cash
 
-# Remove existing .git directory
-rm -rf .git
+# Install dependencies
+npm install
 
-# Initialize new git repository
-git init
+# Run development server
+npm run dev
 
-# Add all files
-git add .
-
-# Create initial commit
-git commit -m "Initial commit: Agentic Cash landing page
-
-Complete, production-ready landing page for Agentic Systems Cash.
-Features:
-- Modern, monochrome design with emerald green accents
-- Three-tier pricing ($17, $27, $97)
-- Legal pages (Privacy, Terms, Refund Policy)
-- Affiliate program page
-- Newsletter signup form
-- FAQ section
-- Mobile-responsive design
-- Accessibility compliant (WCAG)
-- Security headers configured
-- SEO optimized with structured data"
-
-# Add remote (replace with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/agentic-cash.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
+# Open http://localhost:3000
 ```
-
-### Step 2: Create Repository on GitHub
-1. Go to https://github.com/new
-2. Repository name: `agentic-cash`
-3. Description: "AI-powered marketplace arbitrage system - Agentic Cash"
-4. Visibility: Public or Private (your choice)
-5. Do NOT initialize with README, .gitignore, or license (already present)
-6. Click "Create repository"
-7. Follow the instructions above to push your code
 
 ---
 
@@ -361,10 +329,9 @@ git push -u origin main
 - **Tailwind CSS:** https://tailwindcss.com/docs
 - **shadcn/ui:** https://ui.shadcn.com
 
-### Deployment
-- **Vercel:** https://vercel.com
+### Repository
+- **GitHub:** https://github.com/celltech-ai/agentic-cash
 - **Domain:** agenticsystems.cash
-- **Repository:** github.com/YOUR_USERNAME/agentic-cash
 
 ### Contact
 - **Email:** support@agenticsystems.cash
@@ -400,7 +367,7 @@ Specify your license here. Recommended options:
 This project is production-ready and ready for deployment. All critical features have been implemented and tested. The site is fully functional and can be deployed immediately.
 
 **Next Steps:**
-1. Create new GitHub repository: `agentic-cash`
+1. ~~Create new GitHub repository: `agentic-cash`~~ ✅ Done
 2. Deploy to Vercel
 3. Configure domain: agenticsystems.cash
 4. Set up analytics and email service
